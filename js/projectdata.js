@@ -34,7 +34,7 @@ const worksData = [
   {
     id: 5,
     title: 'Event Finder react app',
-    img: ['img/portfolio/event-finder.png'],
+    img: ['img/portfolio/event-finder-1.png'],
     github: 'https://desorgui.github.io',
     live: 'https://desorgui.github.io',
     language: 'HTML, CSS, JS',

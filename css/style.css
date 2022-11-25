@@ -93,78 +93,21 @@ section {
 .section{
   background: #222;
 } 
-/*** Light Body ***/
 
-body.light {
-  color: #666;
-  background-color: #fff;
+/* Skills */
+
+.about .c100 {
+  float: none !important;
+  margin: 0 auto;
+  background-color: #252525;
 }
 
-body.home.light .home-details h1 span,
-body.light .button .button-text {
-  color: #666;
-}
-
-body.light .button:hover .button-text {
+.about .c100 > span {
   color: #fff;
 }
 
-body.home.light .home-details h6 {
-  color: #777;
-}
-
-body.home.light .bg {
-  background-image: url(../img/light.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top;
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
-}
-
-body.light .preloader .black_wall {
-  background-color: #eee;
-}
-
-body.light .preloader {
-  background-color: #fff;
-}
-
-body.light .title-section h1 {
-  color: #666;
-}
-
-body.light .title-bg {
-  color: rgba(30, 37, 48, 0.07);
-}
-
-body.light.about .box-stats {
-  border: 1px solid #ddd;
-}
-
-body.light.about .c100,
-body.light.about .resume-box .time {
-  background-color: #eee;
-}
-
-body.light.about .resume-box .time,
-body.light.about .resume-box p {
-  color: #666;
-}
-
-body.light.about .resume-box .place:before {
-  background-color: #666;
-}
-
-body.light.about  .resume-box li:after {
-  border-left: 1px solid #ddd;
-}
-
-body.light.about .c100 > span {
-  color: #666;
-}
-
-body.light.about .c100:after {
-  background-color: #fff;
+.about .c100:after {
+  background-color: #111;
 }
 
 body.light.portfolio .slideshow figure {

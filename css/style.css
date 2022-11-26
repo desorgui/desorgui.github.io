@@ -1803,4 +1803,8 @@ clip-path: circle(70% at right -50%);
     margin-top: 35px !important;
   }
 }
-  
+
+/* hide counter */
+.counterimg {
+  display: none !important;
+}

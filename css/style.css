@@ -529,7 +529,8 @@ body.light hr.separator {
 .img-cont {
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  padding: 0 3rem;
 }
 .home-gallery div img{
   top:0;

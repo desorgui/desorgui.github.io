@@ -73,6 +73,117 @@ const worksData = [
   },
 ];
 
+const skills = [
+  {
+    id: 1,
+    title: 'HTML',
+    performance: 95,
+  },
+  {
+    id: 2,
+    title: 'CSS',
+    performance: 80,
+  },
+  {
+    id: 3,
+    title: 'tailwind',
+    performance: 65,
+  },
+  {
+    id: 4,
+    title: 'bootstrap',
+    performance: 70,
+  },
+  {
+    id: 5,
+    title: 'JavaScript',
+    performance: 80,
+  },
+  {
+    id: 6,
+    title: 'React',
+    performance: 80,
+  },
+  {
+    id: 7,
+    title: 'Redux',
+    performance: 75,
+  },
+  {
+    id: 8,
+    title: 'Ruby',
+    performance: 80,
+  },
+  {
+    id: 9,
+    title: 'Rails',
+    performance: 80,
+  },
+  {
+    id: 10,
+    title: 'SQL',
+    performance: 80,
+  },
+  {
+    id: 11,
+    title: 'Git',
+    performance: 80,
+  },
+  {
+    id: 12,
+    title: 'Github',
+    performance: 80,
+  },
+  {
+    id: 13,
+    title: 'Heroku',
+    performance: 75,
+  },
+  {
+    id: 14,
+    title: 'Netlify',
+    performance: 85,
+  },
+  {
+    id: 15,
+    title: 'VS Code',
+    performance: 80,
+  },
+  {
+    id: 16,
+    title: 'Figma',
+    performance: 70,
+  },
+  {
+    id: 17,
+    title: 'GraphQl',
+    performance: 65,
+  },
+  {
+    id: 18,
+    title: 'Postgres',
+    performance: 80,
+  },
+];
+
+const skillsContainer = document.querySelector('#skills-container');
+const displaySkills = (skills = []) => {
+let displaySkill =  skills.map((skill) => {
+    return `
+    <div class="col-6 col-md-3 mb-3 mb-sm-5">
+      <div class="c100 p${skill.performance}">
+          <span>${skill.performance}%</span>
+          <div class="slice">
+              <div class="bar"></div>
+              <div class="fill"></div>
+          </div>
+      </div>
+      <h6 class="text-uppercase open-sans-font text-center mt-2 mt-sm-4">${skill.title}</h6>
+    </div>`
+  }).join('');
+  skillsContainer.innerHTML += displaySkill;
+};
+
 const worksContainer = document.querySelector('#grid-works');
 const worksPopup = document.querySelector('#works-popup');
 
@@ -143,5 +254,6 @@ const displayWorks = (works = []) => {
 };
 
 window.addEventListener('DOMContentLoaded', () => {
+  displaySkills(skills);
   displayWorks(worksData);
 });

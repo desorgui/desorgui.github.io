@@ -365,16 +365,17 @@
 <section class="main-content revealator-slideup revealator-once revealator-delay1">
     <div class="container">
         <div class="row">
-            <div class="col-lg-12">
-           <div id="map" class="map">
+                <!-- <div class="col-lg-12">
+                    <div id="map" class="map">
                           <div class="lmpixels-map">
                                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.241457453398!2d-77.12303838501235!3d38.872717156004434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b415c643e911%3A0xbe6cccc14ba5bdeb!2s450%20N%20Florida%20St%2C%20Arlington%2C%20VA%2022203%2C%20%C3%89tats-Unis!5e0!3m2!1sfr!2sht!4v1628972607853!5m2!1sfr!2sht" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                             </div>
-                      </div>
-                      </div>
+                    </div>
+                </div> -->
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="post" action="php/process-form.php">
+                <form class="contactform" method="POST" data-email="desor.guishny@gmail.com"
+                action="https://script.google.com/macros/s/AKfycbwGinLyrAebmx6Z1FdQ6rWF7fcKt_q55gYSiGtlICk_vU6f0UdzGOaIB4LVbg2oDKIt/exec">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
@@ -387,7 +388,7 @@
                                 <input type="text" name="subject" placeholder="YOUR SUBJECT">
                             </div>
                             <div class="col-12">
-                                <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                                <textarea name="body" placeholder="YOUR MESSAGE"></textarea>
                                 <button type="submit" class="button">
                                     <span class="button-text">Send Message</span>
                                 </button>
@@ -404,7 +405,7 @@
                     <div class="col-md-12 col-lg-4">
                       <div class="lm-info-block gray-default">
                         <i class="fa fa-map-marker-alt"></i>
-                        <h4>450 North Florida</h4>
+                        <h4>514 Delmas Haiti</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
@@ -418,7 +419,7 @@
 
                       <div class="lm-info-block gray-default">
                         <i class="fa fa-phone"></i>
-                        <h4>000-000-0000</h4>
+                        <h4>+509-4659-1262</h4>
                         <span class="lm-info-block-value"></span>
                         <span class="lm-info-block-text"></span>
                       </div>
@@ -440,6 +441,7 @@
 
 <!-- Template JS Files -->
 </div>
+<script data-cfasync="false" type="text/javascript" src="js/sendEmail.js"></script>
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/animated-headline.js"></script>
 <script src="js/jquery.fancybox.js"></script>

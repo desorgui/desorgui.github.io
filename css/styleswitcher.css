@@ -131,6 +131,7 @@
    outline:none;
 
    -webkit-appearance: none;
+	 appearance: none;
    cursor:pointer;
 }
 #switcher p.separator {

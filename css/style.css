@@ -1612,6 +1612,9 @@ clip-path: circle(70% at right -50%);
   }
 
 @media (max-width: 767px) {
+  .home .home-details > div {
+    margin-left: 0 !important;
+  }
   .home .home-details p {
     font-size: 14px;
     line-height: 28px;

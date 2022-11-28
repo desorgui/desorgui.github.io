@@ -193,7 +193,7 @@ const displayWorks = (works = []) => {
     return `
       <li>
         <figure>
-            <img src="${work.img[0]}" alt="${work.title}" />
+            <img src="${work.img[0]}" alt="${work.title}" loading="lazy" />
             <div><span>${work.title}</span></div>
         </figure>
       </li>
@@ -235,7 +235,7 @@ const displayWorks = (works = []) => {
         ${work.img.map((img, index) => {
           return `
             <div class="carousel-item ${(index ==0)? 'active' : ''}">
-              <img src="${img}" alt="slide ${index}">
+              <img src="${img}" alt="slide ${index}" loading="lazy">
             </div>
           `
         }).join('')}

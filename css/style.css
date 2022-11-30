@@ -476,7 +476,7 @@ body.light hr.separator {
   }
 
 
-/* [ Pages ] */
+/* [ Home Picture ] */
 /*================================================== */
 
 .home-gallery {
@@ -491,8 +491,6 @@ body.light hr.separator {
   }
   
   .imm{
-    width: 50rem;
-    height: 30rem;
     position: fixed;
     animation: animate 20s linear infinite reverse;
   }

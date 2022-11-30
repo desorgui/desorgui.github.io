@@ -1,19 +1,20 @@
 const worksData = [
   {
     id: 1,
-    title: 'Bunch Template',
-    img: ['img/portfolio/bunch-1.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    title: 'Car Booking App',
+    img: ['img/portfolio/car-booking.png'],
+    github: 'https://github.com/desorgui/Car-Booking-Front-end',
+    live: 'https://github.com/desorgui/Car-Booking-Front-end',
+    tech: 'React, Redux, JS, Ruby, Rails, Tailwind',
   },
   {
     id: 2,
     title: 'Wizzy Beauty template',
-    img: ['img/portfolio/beauty-1.png', 'img/portfolio/beauty-2.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    title: 'Event Finder react app',
+    img: ['img/portfolio/event-finder-1.png'],
+    github: 'https://github.com/desorgui/Event-Finder',
+    live: 'https://desorgui-eventfinder.netlify.app/',
+    tech: 'React, Redux, JS, API, CSS',
   },
   {
     id: 3,
@@ -21,55 +22,55 @@ const worksData = [
     img: ['img/portfolio/learn-1.png', 'img/portfolio/learn-2.png'],
     github: 'https://desorgui.github.io',
     live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    tech: 'HTML, CSS, JS',
   },
   {
     id: 4,
     title: 'Wizzy Edu template',
     img: ['img/portfolio/edu-1.png', 'img/portfolio/edu-2.png', 'img/portfolio/edu-3.png', 'img/portfolio/edu-4.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    github: 'https://wizzy-edu.netlify.app/',
+    live: 'https://wizzy-edu.netlify.app/',
+    tech: 'HTML, CSS, JS',
   },
   {
     id: 5,
-    title: 'Event Finder react app',
-    img: ['img/portfolio/event-finder-1.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    title: 'Wizzy Beauty template',
+    img: ['img/portfolio/beauty-1.png', 'img/portfolio/beauty-2.png'],
+    github: 'https://wizzy-beauty.netlify.app/',
+    live: 'https://wizzy-beauty.netlify.app/',
+    tech: 'HTML, CSS, JS',
   },
   {
     id: 6,
-    title: 'Wizzy News template',
-    img: ['img/portfolio/news-1.png', 'img/portfolio/news-2.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    title: 'Book Store React App',
+    img: ['img/portfolio/book-store.png', 'img/portfolio/news-2.png'],
+    github: 'https://github.com/desorgui/book-store/',
+    live: 'https://desorgui-bookstore.netlify.app/',
+    tech: 'React, Redux, JS, HTML, CSS',
   },
   {
     id: 7,
     title: 'Bunch Business template',
     img: ['img/portfolio/bunch-1.png', 'img/portfolio/bunch-2.png', 'img/portfolio/bunch-3.png', 'img/portfolio/bunch-4.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    github: 'https://bunch-template.netlify.app/',
+    live: 'https://bunch-template.netlify.app/',
+    tech: 'HTML, CSS, JS',
   },
   {
     id: 8,
     title: 'Todo list react app',
     img: ['img/portfolio/todo-list.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    github: 'https://github.com/desorgui/react-todo-app',
+    live: 'https://react-todo-desorgui.netlify.app/',
+    tech: 'React, Javascript, css',
   },
   {
     id: 9,
-    title: 'Project 9',
-    img: ['img/portfolio/todo-list.png'],
-    github: 'https://desorgui.github.io',
-    live: 'https://desorgui.github.io',
-    language: 'HTML, CSS, JS',
+    title: 'Wizzy News Template',
+    img: ['img/portfolio/news-1.png', 'img/portfolio/news-2.png'],
+    github: 'https://wizzy-news.netlify.app/',
+    live: 'https://wizzy-news.netlify.app/',
+    tech: 'HTML, CSS, JS',
   },
 ];
 
@@ -211,13 +212,13 @@ const displayWorks = (works = []) => {
                 <i class="fa fa-file-text-o pr-2"></i><span class="project-label">Project </span>: <span class="ft-wt-600 uppercase">${work.title}</span>
             </div>
             <div class="col-6 mb-2">
-                <i class="fa fa-user-o pr-2"></i><span class="project-label">Code </span>: <span class="ft-wt-600 uppercase">${work.github}</span>
+                <i class="fa fa-user-o pr-2"></i><span class="project-label">Code </span>: <span class="ft-wt-600 uppercase"><a href="${work.github}" target="_blank">Github link</a></span>
             </div>
             <div class="col-6 mb-2">
-                <i class="fa fa-code pr-2"></i><span class="project-label">Langages </span>: <span class="ft-wt-600 uppercase">${work.language}</span>
+                <i class="fa fa-code pr-2"></i><span class="project-label">Technology </span>: <span class="ft-wt-600 uppercase">${work.tech}</span>
             </div>
             <div class="col-6 mb-2">
-                <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="#" target="_blank">${work.live}</a></span>
+                <i class="fa fa-external-link pr-2"></i><span class="project-label">Preview </span>: <span class="ft-wt-600 uppercase"><a href="${work.live}" target="_blank">Live demo link</a></span>
             </div>
         </div>
     </figcaption>
